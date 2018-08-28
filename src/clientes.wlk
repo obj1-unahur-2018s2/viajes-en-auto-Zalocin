@@ -9,3 +9,16 @@ object anaMaria {
 object teresa {
 	method precioPactadoPorKm () {return 22} 	
 }
+
+object melina {
+	var trabajandoPara = null
+	
+	method trabajaPara (quien) {
+		trabajandoPara = quien
+	}
+	
+	method precioPactadoPorKm () {
+		return trabajandoPara.precioPactadoPorKm()-3
+	}
+	
+}
